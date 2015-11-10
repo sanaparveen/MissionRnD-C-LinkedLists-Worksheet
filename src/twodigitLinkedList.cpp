@@ -20,7 +20,14 @@ struct node {
 	int digit2;
 	struct node *next;
 };
-
 int convert_sll_2digit_to_int(struct node *head){
-	return 0;
+	
+	int num = 0;
+	while (head != NULL)
+	{
+		num = ((head->digit1)*10) + (head->digit2) + (num * 100);
+		head = head->next;
+	}
+	return num;
 }
+
