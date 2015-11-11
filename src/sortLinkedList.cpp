@@ -17,7 +17,6 @@ struct node {
 	int num;
 	struct node *next;
 };
-struct node * sortLinkedList(struct node *head);
 void swap(struct node *p1, struct node*p2)
 {
 	int temp = p1->num;

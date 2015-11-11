@@ -18,7 +18,6 @@ struct node {
 	struct node *next;
 };
 struct node *ptr1;
-struct node * removeEveryKthNode(struct node *head, int K);
 void deleteNum(struct node *head, int pos)
 {
 	struct node *prevNode, *currNode;
